@@ -1,80 +1,31 @@
-
-// src/pages/FindMusiciansPage.jsx
-
-// import "./FindMusiciansPage.css";
-// import Button from "../../components/Button"
-
-
-// const musiker = [
-//   {
-//     namn: "Alice Andersson",
-//     instrument: "Sång & Gitarr",
-//     beskrivning: "Singer-songwriter med akustisk stil.",
-//     bild: "https://via.placeholder.com/150",
-//   },
-//   {
-//     namn: "Erik Ekström",
-//     instrument: "DJ (Techno & House)",
-//     beskrivning: "Spelat på studentklubbar i hela stan.",
-//     bild: "https://via.placeholder.com/150",
-//   },
-// ];
-
-
-// function FindMusiciansPage() {
-//   return (
-//     <div className="find-page">
-//       <h1> Hitta Musiker</h1>
-//       <p>Välj bland duktiga studentmusiker för era evenemang.</p>
-
-//       <div className="musiker-lista">
-//         {musiker.map((m, i) => (
-//           <div className="musiker-kort" key={i}>
-//             <img src={m.bild} alt={m.namn} />
-//             <h3>{m.namn}</h3>
-//             <p className="instrument">{m.instrument}</p>
-//             <p className="beskrivning">{m.beskrivning}</p>
-//             <Button text="Boka" onClick={() => alert(`Bokar ${m.namn}`)} />
-//           </div>
-//         ))}
-//       </div>
-//     </div>
-//   );
-// }
-
-
-
-
-
-// export default FindMusiciansPage;
-
-
-
-// src/pages/FindMusiciansPage.jsx
 import React, { useState } from "react";
 import "./FindMusiciansPage.css";
+import adriansBandImage from "../../assets/Images/IMG_F2D67E595987-1.jpeg";
+import BogdanBreakdance from "../../assets/Images/KGE_5194.jpeg";
+import RubenOchTrubadurerna from "../../assets/Images/IMG_EA90CE8263A2-1.jpeg";
+
 
 const musicians = [
   {
-    name: "Acoustic Dreams",
+    name: "Adrians Band",
     genres: ["Folk", "Acoustic"],
     rating: 4.9,
     price: 2200,
-    image: "https://via.placeholder.com/300x200",
+    image: adriansBandImage,
   },
   {
-    name: "The Uppsala Jazz Ensemble",
-    genres: ["Jazz", "Blues"],
+    name: "Bogdan Breakdance",
+    genres: ["Funk", "Jazz", "Coola"],
     rating: 4.8,
     price: 4500,
-    image: "https://via.placeholder.com/300x200",
+    image: BogdanBreakdance,
   },
   {
-    name: "Classical Quartet",
+    name: "Ruben och Trubadurerna",
     genres: ["Classical", "Chamber"],
     rating: 4.8,
     price: 4000,
-    image: "https://via.placeholder.com/300x200",
+    image: RubenOchTrubadurerna,
   },
   {
     name: "DJ Studentmix",
@@ -149,7 +100,7 @@ function FindMusiciansPage() {
                 ))}
               </div>
               <div className="rating-price">
-                <span className="rating">⭐ {m.rating}</span>
+                <span className="rating"> ★ {m.rating}</span>
                 <span className="price">Starting at {m.price} SEK</span>
               </div>
             </div>
