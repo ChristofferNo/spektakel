@@ -24,14 +24,17 @@
   }
 
   .logoContainer {
+    display: flex;
     flex: 2;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
   }
   .logo{
     font-size: 24px;
     font-weight: bold;
     cursor: pointer;
     display: flex;
-    justify-content: start;
   }
   .logo:hover {
     color: #007bff;

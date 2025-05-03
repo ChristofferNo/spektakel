@@ -4,6 +4,8 @@ import adriansBandImage from "../../assets/Images/placeHolderImage.jpeg";
 import BogdanBreakdance from "../../assets/Images/VinterBogdan.jpeg";
 import RubenOchTrubadurerna from "../../assets/Images/RubenTrub.jpeg";
 
+import MusicianCard from "../../components/MusicianCard/MusicianCard";
+
 
 const musicians = [
   {
@@ -97,26 +99,12 @@ function FindMusiciansPage({ navigate, setSelectedMusician }) {
 
         <div className="musician-grid">
           {filtered.map((m, i) => (
-            <div
-              className="musician-card"
+            <MusicianCard
               key={i}
-              onClick={() => {
-                setSelectedMusician(m);
-                navigate("ProfilePage");
-              }}
-            >
-              <img src={m.image} alt={m.name} className="musician-img" />
-              <h3>{m.name}</h3>
-              <div className="genres">
-                {m.genres.map((g) => (
-                  <span key={g} className="genre-tag">{g}</span>
-                ))}
-              </div>
-              <div className="rating-price">
-                <span className="rating"> ★ {m.rating}</span>
-                <span className="price">Från {m.price} SEK</span>
-              </div>
-            </div>
+              navigate={navigate}
+              setSelectedMusician={setSelectedMusician}
+              activeMusician={m}
+            />
           ))}
         </div>
       </main>

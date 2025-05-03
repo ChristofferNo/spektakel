@@ -13,7 +13,9 @@ function HomePage({navigate}) {
       </div>
       </div>
     </div>
-      
+    <div className="atists-preview">
+        Testjizcjiawdp
+      </div>
     </div>
   );
 }
