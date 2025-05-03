@@ -1,0 +1,21 @@
+/* src/assets/styles/NavBar.css */
+.navBar {
+    background-color: #f0f0f0;
+    padding: 10px;
+  }
+  
+  .navBar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .navBar li {
+    cursor: pointer;
+    transition: color 0.3s;
+  }
+  
+  .navBar li:hover {
+    color: #007bff;
+  }
+  
