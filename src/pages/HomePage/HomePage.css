@@ -2,60 +2,69 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 100vh;
-    width: 100vw;
-
+  width: 100vw;
 }
 .bandImage {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   width: 100%;
   height: auto;
 }
 
 .hero-container {
-    position: relative;
-    height: 100vh;
-    width: 100%;
-    background-image: url('../../assets/Images/placeHolderImage.jpeg'); /* Lägg din bild här */
-    background-size: cover;
-    background-position: center;
-  }
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  background-image: url("../../assets/Images/placeHolderImage.jpeg"); /* Lägg din bild här */
+  background-size: cover;
+  background-position: center;
+}
 
-  .hero-overlay {
-    text-align: center;
-    color: white;
-    max-width: 100%
+.hero-overlay {
+  text-align: center;
+  color: white;
+  max-width: 100%;
+}
 
-  }
+.hero-button {
+  margin-top: 20px;
+  padding: 12px 24px;
+  background-color: #003366;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 16px;
+}
 
-  .hero-button {
-    margin-top: 20px;
-    padding: 12px 24px;
-    background-color: #003366;
-    color: white;
-    border: none;
-    border-radius: 6px;
-    font-weight: bold;
-    cursor: pointer;
-    font-size: 16px;
-  }
-  
-  .hero-button:hover {
-    background-color: #0055aa;
-  }
+.hero-button:hover {
+  background-color: #0055aa;
+}
 
-  .dark-overlay {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.5); /* Halvmörk bakgrund */
-    z-index: 1; /* Se till att överlägget är ovanpå bilden */
-  }
+.dark-overlay {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.artists-preview {
+  height: 200px;
+  display: flex;
+  flex-direction: row;
+  gap: 10vw;
+  padding: 2rem 10vw;
+}
+
+.artist-card {
+  flex: 1;
+}
+
+.musician-img {
+  object-fit: cover;
+}

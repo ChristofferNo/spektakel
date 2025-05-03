@@ -1,6 +1,9 @@
 import "../HomePage/HomePage.css";
+import musicians from "../../assets/dummyData/musicians";
+import MusicianCard from "../../components/MusicianCard/MusicianCard";
 
-function HomePage({ navigate }) {
+function HomePage({ navigate, setSelectedMusician }) {
+  const previewMusicians = musicians.slice(0, 3);
   return (
     <div className="homePageContainer">
       <div className="hero-container">
@@ -8,7 +11,8 @@ function HomePage({ navigate }) {
           <div className="hero-overlay">
             <h1>Uppsalas främsta plattform för studentmusiker</h1>
             <p>
-              Vi för samman nationer, event organisatörer och musiker i Uppsala
+              Vi för samman musiker med nationer och event-organisatörer i
+              Uppsala
             </p>
             <button
               onClick={() => navigate("FindMusiciansPage")}
@@ -19,7 +23,44 @@ function HomePage({ navigate }) {
           </div>
         </div>
       </div>
-      <div className="atists-preview">Testjizcjiawdp</div>
+      <div>testst</div>
+      <div>testst</div>
+      <div>testst</div>
+      <div>testst</div>
+      <div>testst</div>
+      <div>testst</div>
+      <div>testst</div>
+      <div>testst</div>
+      <div>testst</div>
+      <div>testst</div>
+      <div>testst</div>
+      <div>testst</div>
+      <div>testst</div>
+      <div>testst</div>
+      <div>testst</div>
+      <div>testst</div>
+      <div>testst</div>
+      <div>testst</div>
+      {/* <div style={{ height: "100px" }}> test</div>
+
+      <div className="artists-preview">
+        {previewMusicians.map((musician, i) => (
+          <div
+            key={i}
+            style={{ width: "300px", height: "200px", overflow: "hidden" }}
+          >
+            <img
+              src={musician.image}
+              alt="Thumbnail"
+              style={{
+                width: "100%",
+                height: "100%",
+                objectFit: "cover", // ✅ Makes it fill without distortion
+              }}
+            />
+          </div>
+        ))}
+      </div> */}
     </div>
   );
 }
