@@ -1,9 +1,10 @@
+import "../HomePage/HomePage.css";
+
 
 function HomePage() {
   return (
-    <div>
-      <h1>SPEKtakel</h1>
-      <p>Hitta ditt band/gigg</p>
+    <div className="homePageContainer">
+      <div className="bandImage">Band</div>
     </div>
   );
 }

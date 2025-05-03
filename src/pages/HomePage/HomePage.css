@@ -1,0 +1,13 @@
+.homePageContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+    width: 100vw;
+
+}
+.bandImage {
+  width: 100%;
+  height: auto;
+    background-color: aqua;
+}
