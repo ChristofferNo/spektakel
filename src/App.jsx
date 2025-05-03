@@ -4,7 +4,9 @@ import NavBar from './components/NavBar/NavBar'
 import AboutPage from './pages/AboutPage/AboutPage'
 import FindMusiciansPage from './pages/FindMusiciansPage/FindMusiciansPage'
 import ProfilePage from './pages/ProfilePage/ProfilePage' // NY
+import Footer from './components/Footer/Footer'
 import './assets/styles/App.css'
+
 
 function App() {
 const [page, setPage] = useState('HomePage')
@@ -30,7 +32,8 @@ const ActivePage = pageMap[page];
       musician={selectedMusician}
       setSelectedMusician={setSelectedMusician}
       />
-      </div>
+      <Footer navigate={setPage} />
+    </div>
     </>
   )
 }

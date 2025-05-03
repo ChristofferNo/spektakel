@@ -113,3 +113,16 @@
       grid-template-columns: repeat(3, 1fr);
     }
   }
+
+
+
+  .genre-tag {
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  .genre-tag.active {
+    background-color: #007bff;
+    color: white;
+  }
+  

@@ -21,7 +21,7 @@ function MusicianCard({navigate, setSelectedMusician, activeMusician, key}) {
               </div>
               <div className="rating-price">
                 <span className="rating"> ★ {activeMusician.rating}</span>
-                <span className="price">Från {activeMusician.price} SEK</span>
+                <span className="price">{activeMusician.price}</span>
               </div>
             </div>
   );

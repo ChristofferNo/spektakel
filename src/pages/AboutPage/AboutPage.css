@@ -1,0 +1,13 @@
+.text-about {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* centrerar horisontellt */
+  justify-content: center; /* centrerar vertikalt om höjd ges */
+  height: 100vh; /* valfritt – gör sidan fullhöjd */
+  text-align: center;
+}
+
+
+.text-about p{
+  margin-top: -2rem;
+}
