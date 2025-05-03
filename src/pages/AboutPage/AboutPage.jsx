@@ -1,5 +1,5 @@
 
-function HomePage() {
+function AboutPage() {
     return (
       <div>
         <h1>Om oss</h1>
@@ -8,4 +8,4 @@ function HomePage() {
     );
   }
   
-  export default HomePage;
+  export default AboutPage;
