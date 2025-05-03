@@ -1,10 +1,13 @@
+// src/components/Button.jsx
+import React from "react";
+import "./Button.css";
 
-function HomePage() {
-    return (
-      <div>
+function Button({ text, onClick }) {
+  return (
+    <button className="custom-button" onClick={onClick}>
+      {text}
+    </button>
+  );
+}
 
-      </div>
-    );
-  }
-  
-  export default HomePage;
+export default Button;
