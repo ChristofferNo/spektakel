@@ -1,7 +1,11 @@
 /* src/assets/styles/NavBar.css */
 .navBar {
     background-color: #f0f0f0;
-    padding: 10px;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: stretch;
+    align-items: center;
   }
   
   .navBar ul {
@@ -17,5 +21,24 @@
   
   .navBar li:hover {
     color: #007bff;
+  }
+
+  .logoContainer {
+    flex: 2;
+  }
+  .logo{
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    justify-content: start;
+  }
+  .logo:hover {
+    color: #007bff;
+  }
+  .navItems {
+    flex: 1;
+    flex-direction: row;
+    justify-items: center;
   }
   
