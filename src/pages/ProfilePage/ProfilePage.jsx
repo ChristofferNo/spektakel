@@ -21,7 +21,7 @@ function ProfilePage({ musician, navigate }) {
       {/* Vänsterkolumn */}
       <div className="profile-left">
         <button className="back-button" onClick={() => navigate("FindMusiciansPage")}>
-          ← Hitta fler spektakel 
+          ← Hitta fler spektakel
         </button>
 
         <h1 style={{ fontWeight: 700, fontSize: "2.4rem", margin: "0.5rem 0" }}>
@@ -73,7 +73,7 @@ function ProfilePage({ musician, navigate }) {
               <div>Tillgängliga: {availability}</div>  
             </div> */}
             <div>
-              <strong>Social Links</strong>
+              <strong>Sociala Medier</strong>
               <div style={{ marginTop: 4 }}>
                 {socialLinks.map(link => (
                   <a
@@ -115,7 +115,7 @@ function ProfilePage({ musician, navigate }) {
           <div style={{ color: "#555", marginBottom: 10 }}>
             Boka {musician.name} för ditt nästa spektakel
           </div>
-          <div style={{ fontWeight: 700, fontSize: "2rem" }}>{musician.price} SEK</div>
+          <div style={{ fontWeight: 700, fontSize: "2rem" }}>{musician.price} </div>
           {/* <div style={{ color: "#888", fontSize: "0.98rem", marginBottom: 8 }}>per performance</div> */}
           {/* <div style={{ fontWeight: 600, marginTop: 12 }}>Tillgängliga</div> */}  {/*Tar bort Tillgänglighet*/}
           {/* <div style={{ marginBottom: 10 }}>Tillgängliga: {availability}</div> */}   {/*Tar bort Tillgänglighet*/}

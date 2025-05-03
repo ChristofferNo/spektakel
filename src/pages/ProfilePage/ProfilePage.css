@@ -1,10 +1,8 @@
-
 .profile-page {
   display: flex;
   gap: 2rem;
   padding: 2rem;
   max-width: 1200px;
-  padding-top: 250px;
   margin: auto;
 }
 
@@ -79,12 +77,14 @@
   cursor: not-allowed;
 }
 
-.description h2, .description h3 {
+.description h2,
+.description h3 {
   margin-top: 1rem;
   margin-bottom: 0.5rem;
 }
 
-.booking-box, .contact-box {
+.booking-box,
+.contact-box {
   border: 1px solid #e0e0e0;
   padding: 1rem;
   border-radius: 8px;
@@ -92,9 +92,10 @@
 }
 
 .price {
-  font-size: 1.4rem;
+  font-size: 0.9rem;
   font-weight: bold;
   margin: 0.5rem 0;
+
 }
 
 .note {
@@ -117,236 +118,3 @@ textarea {
   border-radius: 5px;
   cursor: pointer;
 }
-
-
-
-
-
-
-
-
-
-
-/* 
- body {
-  background: #fafbfc;
-  font-family: 'Inter', Arial, sans-serif;
-}
-
-.profile-page {
-  display: flex;
-  gap: 2.5rem;
-  max-width: 1200px;
-  margin: 2.5rem auto 0 auto;
-  align-items: flex-start;
-  background: transparent;
-}
-
-.profile-left {
-  flex: 3;
-  min-width: 0;
-}
-
-.profile-right {
-  flex: 1.1;
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-}
-
-.back-button {
-  background: none;
-  border: none;
-  color: #2752e7;
-  font-size: 1rem;
-  cursor: pointer;
-  margin-bottom: 1.3rem;
-  padding: 0;
-  font-weight: 500;
-  transition: text-decoration 0.15s;
-}
-.back-button:hover {
-  text-decoration: underline;
-}
-
-h1 {
-  font-size: 2.2rem;
-  font-weight: 700;
-  margin: 0.5rem 0 0.7rem 0;
-  line-height: 1.1;
-}
-
-.rating-location {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  font-size: 1.15rem;
-  margin-bottom: 1.1rem;
-}
-.rating-location .star {
-  color: #FFC107;
-  font-size: 1.2em;
-  margin-right: 0.15em;
-}
-.rating-location .reviews {
-  color: #888;
-  font-size: 1rem;
-  margin-left: 0.2em;
-}
-.rating-location .dot {
-  margin: 0 0.6em;
-  color: #bbb;
-  font-size: 1.1em;
-}
-
-.genre-tags {
-  margin-bottom: 1.2rem;
-  display: flex;
-  gap: 0.7rem;
-}
-
-.genre-tag {
-  background: #fff;
-  border: 1px solid #e0e0e0;
-  padding: 0.33em 0.95em;
-  border-radius: 1.3em;
-  font-size: 1rem;
-  color: #212529;
-  font-weight: 500;
-  display: inline-block;
-}
-
-.profile-image {
-  width: 100%;
-  max-height: 370px;
-  object-fit: cover;
-  border-radius: 16px;
-  margin: 1.2rem 0 1.7rem 0;
-  background: #eee;
-}
-
-.tabs {
-  display: flex;
-  gap: 0.6rem;
-  margin: 0.7rem 0 1.2rem 0;
-}
-
-.tab {
-  background: #f4f6f8;
-  border: none;
-  padding: 0.7rem 1.6rem;
-  border-radius: 10px 10px 0 0;
-  font-size: 1.05rem;
-  color: #6b6b6b;
-  cursor: pointer;
-  font-weight: 500;
-  border-bottom: 2px solid transparent;
-  transition: background 0.15s, color 0.15s;
-}
-
-.tab.active {
-  background: #fff;
-  color: #212529;
-  border-bottom: 2px solid #2752e7;
-  font-weight: 600;
-}
-
-.tab:not(.active):hover {
-  background: #e6eaf0;
-  color: #212529;
-}
-
-.tab.disabled {
-  color: #b0b0b0;
-  cursor: not-allowed;
-}
-
-.description h2, .description h3 {
-  margin-top: 1.2rem;
-  margin-bottom: 0.7rem;
-  font-weight: 600;
-  font-size: 1.2rem;
-}
-
-.booking-box, .contact-box {
-  border: 1px solid #e0e0e0;
-  padding: 2rem 1.5rem 1.5rem 1.5rem;
-  border-radius: 16px;
-  background-color: #fff;
-  box-shadow: 0 2px 8px rgba(60,70,90,0.03);
-}
-
-.booking-box h2,
-.contact-box h2 {
-  font-size: 1.25rem;
-  font-weight: 700;
-  margin-bottom: 0.4rem;
-}
-
-.booking-box .price {
-  font-size: 2rem;
-  font-weight: 700;
-  margin: 0.6rem 0 0.2rem 0;
-  color: #212529;
-}
-
-.booking-box .note,
-.booking-box .availability,
-.booking-box .per-performance {
-  color: #888;
-  font-size: 1rem;
-  margin-bottom: 0.7rem;
-}
-
-.booking-box .availability-label {
-  font-weight: 600;
-  color: #222;
-  margin-top: 0.7rem;
-  margin-bottom: 0.2rem;
-}
-
-.contact-box label {
-  font-weight: 600;
-  margin-bottom: 0.3rem;
-  display: block;
-}
-
-textarea {
-  width: 100%;
-  min-height: 90px;
-  margin: 0.5rem 0 1rem 0;
-  padding: 0.7rem;
-  border-radius: 8px;
-  border: 1px solid #e0e0e0;
-  font-size: 1rem;
-  resize: vertical;
-  background: #fafbfc;
-}
-
-.send-button {
-  background: #8fa4c8;
-  color: #fff;
-  border: none;
-  padding: 0.75rem 1.5rem;
-  border-radius: 8px;
-  font-size: 1.1rem;
-  font-weight: 600;
-  cursor: pointer;
-  transition: background 0.14s;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.5em;
-}
-.send-button:hover {
-  background: #6c8ebf;
-}
-
-a {
-  color: #2752e7;
-  text-decoration: underline;
-  font-weight: 500;
-}
-a:hover {
-  text-decoration: none;
-} */

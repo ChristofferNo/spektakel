@@ -32,8 +32,8 @@ const ActivePage = pageMap[page];
       musician={selectedMusician}
       setSelectedMusician={setSelectedMusician}
       />
-      <Footer navigate={setPage} />
     </div>
+      <Footer navigate={setPage} />
     </>
   )
 }
