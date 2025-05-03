@@ -3,15 +3,20 @@ import HomePage from './pages/HomePage/HomePage'
 import NavBar from './components/NavBar/NavBar'
 import AboutPage from './pages/AboutPage/AboutPage'
 import FindMusiciansPage from './pages/FindMusiciansPage/FindMusiciansPage'
+import ProfilePage from './pages/ProfilePage/ProfilePage' // NY
 import './assets/styles/App.css'
 
 function App() {
 const [page, setPage] = useState('HomePage')
+const [selectedMusician, setSelectedMusician] = useState(null)
+
 const pageMap = {
   HomePage,
   AboutPage,
-  FindMusiciansPage
+  FindMusiciansPage,
+  ProfilePage
 };
+
 const ActivePage = pageMap[page];
 
 
@@ -20,7 +25,11 @@ const ActivePage = pageMap[page];
      <div className="appContainer">
       {/* Render different components (Navigation logic) */}
       <NavBar className="navBar" navigate={setPage} />
-      <ActivePage navigate={setPage} />
+      <ActivePage 
+      navigate={setPage}
+      musician={selectedMusician}
+      setSelectedMusician={setSelectedMusician}
+      />
       </div>
     </>
   )

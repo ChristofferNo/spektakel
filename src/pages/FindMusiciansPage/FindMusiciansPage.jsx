@@ -43,13 +43,13 @@ const musicians = [
   },
 ];
 
-function FindMusiciansPage() {
+function FindMusiciansPage({ navigate, setSelectedMusician }) {
   const [search, setSearch] = useState("");
   const [sortOrder, setSortOrder] = useState("rating");
 
   const filtered = musicians
     .filter((m) => m.name.toLowerCase().includes(search.toLowerCase()))
-    .sort((a, b) => b.rating - a.rating);
+    .sort((a, b) => b.rating - a.rating); // Kan utökas baserat på sortOrder
 
   return (
     <div className="find-musicians-container">
@@ -68,7 +68,11 @@ function FindMusiciansPage() {
         <div className="filter-section">
           <h3>Filter by Genre</h3>
           <div className="genre-tags">
-            {["Acoustic", "Alternative", "Blues", "Chamber", "Classical", "Comedy", "Electronic", "Entertainment", "Folk", "House", "Jazz", "Pop", "Rock"].map((genre) => (
+            {[
+              "Acoustic", "Alternative", "Blues", "Chamber", "Classical",
+              "Comedy", "Electronic", "Entertainment", "Folk", "House",
+              "Jazz", "Pop", "Rock", "Funk", "Coola"
+            ].map((genre) => (
               <span key={genre} className="genre-tag">{genre}</span>
             ))}
           </div>
@@ -81,6 +85,7 @@ function FindMusiciansPage() {
             onChange={(e) => setSortOrder(e.target.value)}
           >
             <option value="rating">Rating (High to Low)</option>
+            {/* Lägg till fler sorteringar vid behov */}
           </select>
         </div>
       </aside>
@@ -89,9 +94,17 @@ function FindMusiciansPage() {
         <div className="header-row">
           <span>{filtered.length} musicians found</span>
         </div>
+
         <div className="musician-grid">
           {filtered.map((m, i) => (
-            <div className="musician-card" key={i}>
+            <div
+              className="musician-card"
+              key={i}
+              onClick={() => {
+                setSelectedMusician(m);
+                navigate("ProfilePage");
+              }}
+            >
               <img src={m.image} alt={m.name} className="musician-img" />
               <h3>{m.name}</h3>
               <div className="genres">
@@ -101,7 +114,7 @@ function FindMusiciansPage() {
               </div>
               <div className="rating-price">
                 <span className="rating"> ★ {m.rating}</span>
-                <span className="price">Starting at {m.price} SEK</span>
+                <span className="price">Från {m.price} SEK</span>
               </div>
             </div>
           ))}
