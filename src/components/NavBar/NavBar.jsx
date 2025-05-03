@@ -11,8 +11,8 @@ function NavBar({ navigate }) {
       <div className='navItems'>
       <ul>
         <li onClick={() => navigate('HomePage')}>Hem</li>
-        <li onClick={() => navigate('AboutPage')}>Om oss</li>
         <li onClick={() => navigate('FindMusiciansPage')}>Hitta musiker</li>
+        <li onClick={() => navigate('AboutPage')}>Om oss</li>
         {/* Add more items as you create other pages */}
         {/* <li onClick={() => navigate('AboutPage')}>About</li> */}
       </ul>
