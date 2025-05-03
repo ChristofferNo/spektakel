@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import "./FindMusiciansPage.css";
-import adriansBandImage from "../../assets/Images/IMG_F2D67E595987-1.jpeg";
-import BogdanBreakdance from "../../assets/Images/KGE_5194.jpeg";
-import RubenOchTrubadurerna from "../../assets/Images/IMG_EA90CE8263A2-1.jpeg";
+import adriansBandImage from "../../assets/Images/placeHolderImage.jpeg";
+import BogdanBreakdance from "../../assets/Images/VinterBogdan.jpeg";
+import RubenOchTrubadurerna from "../../assets/Images/RubenTrub.jpeg";
 
 
 const musicians = [
