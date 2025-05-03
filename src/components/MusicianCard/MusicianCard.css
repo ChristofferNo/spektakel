@@ -9,9 +9,10 @@
 
 .musician-img {
   width: 100%;
-  height: auto;
-  border-radius: 4px;
+  aspect-ratio: 3 / 2; /* Width : Height => 3:2 means height = 66.66% of width */
+  border-radius: 0.25rem;
   margin-bottom: 0.75rem;
+  object-fit: cover; /* Optional, for image scaling */
 }
 
 .musician-card h3 {

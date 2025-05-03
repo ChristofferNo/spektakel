@@ -1,11 +1,13 @@
 import adriansBandImage from "../Images/placeHolderImage.jpeg";
-import BogdanBreakdance from "../Images/VinterBogdan.jpeg";
+import BogdanBreakdance from "../Images/BogdanVision.jpeg";
+import BogdanBreakdanceVinter from "../Images/VinterBogdan.jpeg";
 import RubenOchTrubadurerna from "../Images/RubenTrub.jpeg";
+import Melker from "../Images/Melker.jpeg";
 
 const musicians = [
   {
     name: "Adrians Band",
-    genres: ["Folk", "Acoustic"],
+    genres: ["Blues", "Rock"],
     rating: 4.9,
     price: "＄",
     image: adriansBandImage,
@@ -23,8 +25,8 @@ const musicians = [
   },
   {
     name: "Bogdan Breakdance",
-    genres: ["Funk", "Jazz", "Coola"],
-    rating: 4.8,
+    genres: ["Funk", "Jazz", "Coola", "Rock"],
+    rating: 5.6,
     price: "＄＄",
     image: BogdanBreakdance,
     location: "Uppsala",
@@ -45,7 +47,7 @@ const musicians = [
   },
   {
     name: "Ruben och Trubadurerna",
-    genres: ["Classical", "Chamber"],
+    genres: ["Classical", "Chamber", "Folk"],
     rating: 4.8,
     price: "＄",
     image: RubenOchTrubadurerna,
@@ -57,24 +59,24 @@ const musicians = [
     ],
   },
   {
-    name: "DJ Studentmix",
-    genres: ["Electronic", "Pop"],
-    rating: 4.7,
+    name: "Melker Thunholm",
+    genres: ["Acoustic", "Guitarr", "Pop"],
+    rating: 4.9,
     price: "＄＄＄",
-    image: "https://via.placeholder.com/300x200",
+    image: Melker,
     location: "Göteborg",
     description:
-      "En populär DJ bland studenter som levererar både pophits och elektroniska beats hela natten.",
+      "En populär sångare och gitarrist som förtrollar med sin charm och magiska blick. ",
     reviews: [
       { user: "Kalle", comment: "Bra mix, alla dansade!", rating: 4.7 },
     ],
   },
   {
-    name: "Stand-up Students",
-    genres: ["Comedy", "Entertainment"],
+    name: "Bogdans Pizzeria",
+    genres: ["Comedy", "Entertainment", "House"],
     rating: 4.6,
     price: "＄",
-    image: "https://via.placeholder.com/300x200",
+    image: BogdanBreakdanceVinter,
     location: "Malmö",
     description:
       "Underhållande stand-up-akt från studentvärlden. Skrattgaranti på allt från firmafest till sittning!",

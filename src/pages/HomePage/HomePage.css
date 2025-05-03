@@ -1,3 +1,5 @@
+/* 
+
 .homePageContainer {
   display: flex;
   flex-direction: column;
@@ -17,7 +19,7 @@
   position: relative;
   height: 100vh;
   width: 100%;
-  background-image: url("../../assets/Images/placeHolderImage.jpeg"); /* Lägg din bild här */
+  background-image: url("../../assets/Images/placeHolderImage.jpeg"); 
   background-size: cover;
   background-position: center;
 }
@@ -67,4 +69,73 @@
 
 .musician-img {
   object-fit: cover;
+} */
+
+
+.homePageContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-container {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  transition: opacity 1.5s ease-in-out;
+  z-index: 0;
+}
+
+.slide.active {
+  opacity: 1;
+  z-index: 1;
+}
+
+.dark-overlay {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 2;
+  position: relative;
+}
+
+.hero-overlay {
+  text-align: center;
+  color: white;
+  max-width: 90%;
+  padding: 2rem;
+}
+
+.hero-button {
+  margin-top: 20px;
+  padding: 12px 24px;
+  background-color: #003366;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.hero-button:hover {
+  background-color: #0055aa;
 }
