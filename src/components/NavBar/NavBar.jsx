@@ -1,6 +1,6 @@
 // src/components/NavBar.jsx
 import React from 'react';
-import '../assets/styles/NavBar.css'; // Optional: include if you plan to style it separately
+import './NavBar.css'; // Import your CSS file for styling
 
 function NavBar({ navigate }) {
   return (

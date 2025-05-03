@@ -1,9 +1,9 @@
 import { useState } from 'react'
-import HomePage from './pages/HomePage'
-import NavBar from './components/NavBar'
-import AboutPage from './pages/AboutPage'
-import FindMusiciansPage from './pages/FindMusiciansPage'
-import './assets/styles/AppSecond.css'
+import HomePage from './pages/HomePage/HomePage'
+import NavBar from './components/NavBar/NavBar'
+import AboutPage from './pages/AboutPage/AboutPage'
+import FindMusiciansPage from './pages/FindMusiciansPage/FindMusiciansPage'
+import './assets/styles/App.css'
 
 function App() {
 const [page, setPage] = useState('HomePage')
