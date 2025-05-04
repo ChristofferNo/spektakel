@@ -1,5 +1,6 @@
 .musician-card {
   border: 1px solid #ddd;
+  width: 18rem;
   border-radius: 8px;
   background-color: white;
   padding: 1rem;

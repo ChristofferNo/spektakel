@@ -4,6 +4,7 @@ import BogdanBreakdanceVinter from "../Images/VinterBogdan.jpeg";
 import RubenOchTrubadurerna from "../Images/RubenTrub.jpeg";
 import Melker from "../Images/Melker.jpeg";
 import DJHammer from "../Images/DJ-Hammer-1.jpeg";
+import MaxSax from "../Images/Max-Sne.jpeg";
 
 const musicians = [
   {
@@ -94,7 +95,7 @@ const musicians = [
   {
     name: "DJ Hammer",
     genres: ["House", "DJ", "Club", "Epic"],
-    rating: 4.9,
+    rating: 4.5,
     price: "＄＄",
     image: DJHammer,
     location: "Uppsala",
@@ -105,7 +106,26 @@ const musicians = [
         user: "Truls",
         comment:
           "Otrolig! Styrde dansgolvet som med en tv-kontroll– kvällen blev episk!",
-        rating: 4.9,
+        rating: 4.5,
+      },
+    ],
+  },
+
+  {
+    name: "Max with the Sax",
+    genres: ["Coola", "Saxofon", "Jazz", "Blues", "Funk"],
+    rating: 4.7,
+    price: "＄",
+    image: MaxSax,
+    location: "Uppsala",
+    description:
+      "Saxofonist som gör hela publiken kåt. Med fingrar spelande likt en gud och lungor alstrande vindar som blåser publiken till extas!",
+    reviews: [
+      {
+        user: "Zoe",
+        comment:
+          "Helt magiskt! Vilken sexig man och ännu sexigare saxofon – jag är våt!",
+        rating: 4.7,
       },
     ],
   },
