@@ -3,6 +3,7 @@ import BogdanBreakdance from "../Images/BogdanVision.jpeg";
 import BogdanBreakdanceVinter from "../Images/VinterBogdan.jpeg";
 import RubenOchTrubadurerna from "../Images/RubenTrub.jpeg";
 import Melker from "../Images/Melker.jpeg";
+import DJHammer from "../Images/DJ-Hammer-1.jpeg";
 
 const musicians = [
   {
@@ -71,6 +72,7 @@ const musicians = [
       { user: "Kalle", comment: "Bra mix, alla dansade!", rating: 4.7 },
     ],
   },
+
   {
     name: "Bogdans Pizzeria",
     genres: ["Comedy", "Entertainment", "House"],
@@ -85,6 +87,25 @@ const musicians = [
         user: "Moa",
         comment: "Roliga och spontana – kvällen blev minnesvärd.",
         rating: 4.6,
+      },
+    ],
+  },
+
+  {
+    name: "DJ Hammer",
+    genres: ["House", "DJ", "Club", "Epic"],
+    rating: 4.9,
+    price: "＄＄",
+    image: DJHammer,
+    location: "Uppsala",
+    description:
+      "Uppsalas främsta DJ som förgyller din kväll. Med erfarenhet som DJ för Ekonomi-programmets mottagning och fleratlet nationer och studentsläpp är vi säkra på att DJ Hammer levererar!",
+    reviews: [
+      {
+        user: "Truls",
+        comment:
+          "Otrolig! Styrde dansgolvet som med en tv-kontroll– kvällen blev episk!",
+        rating: 4.9,
       },
     ],
   },
