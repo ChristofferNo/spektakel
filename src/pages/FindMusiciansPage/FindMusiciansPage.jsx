@@ -4,7 +4,6 @@
 
 // import MusicianCard from "../../components/MusicianCard/MusicianCard";
 
-
 // function FindMusiciansPage({ navigate, setSelectedMusician }) {
 //   const [search, setSearch] = useState("");
 //   const [sortOrder, setSortOrder] = useState("rating");
@@ -74,17 +73,27 @@
 
 // export default FindMusiciansPage;
 
-
-
 import React, { useState } from "react";
 import "./FindMusiciansPage.css";
 import musicians from "../../assets/dummyData/musicians";
 import MusicianCard from "../../components/MusicianCard/MusicianCard";
 
 const allGenres = [
-  "Acoustic", "Alternative", "Blues", "Chamber", "Classical",
-  "Comedy", "Electronic", "Entertainment", "Folk", "House",
-  "Jazz", "Pop", "Rock", "Funk", "Coola"
+  "Acoustic",
+  "Alternative",
+  "Blues",
+  "Chamber",
+  "Classical",
+  "Comedy",
+  "Electronic",
+  "Entertainment",
+  "Folk",
+  "House",
+  "Jazz",
+  "Pop",
+  "Rock",
+  "Funk",
+  "Coola",
 ];
 
 function FindMusiciansPage({ navigate, setSelectedMusician }) {
@@ -94,17 +103,16 @@ function FindMusiciansPage({ navigate, setSelectedMusician }) {
 
   const toggleGenre = (genre) => {
     setSelectedGenres((prev) =>
-      prev.includes(genre)
-        ? prev.filter((g) => g !== genre)
-        : [...prev, genre]
+      prev.includes(genre) ? prev.filter((g) => g !== genre) : [...prev, genre]
     );
   };
 
   const filtered = musicians
-    .filter((m) =>
-      m.name.toLowerCase().includes(search.toLowerCase()) &&
-      (selectedGenres.length === 0 ||
-        selectedGenres.some((genre) => m.genres.includes(genre)))
+    .filter(
+      (m) =>
+        m.name.toLowerCase().includes(search.toLowerCase()) &&
+        (selectedGenres.length === 0 ||
+          selectedGenres.some((genre) => m.genres.includes(genre)))
     )
     .sort((a, b) => {
       if (sortOrder === "rating") return b.rating - a.rating;
@@ -131,7 +139,9 @@ function FindMusiciansPage({ navigate, setSelectedMusician }) {
             {allGenres.map((genre) => (
               <span
                 key={genre}
-                className={`genre-tag ${selectedGenres.includes(genre) ? "active" : ""}`}
+                className={`genre-tag ${
+                  selectedGenres.includes(genre) ? "active" : ""
+                }`}
                 onClick={() => toggleGenre(genre)}
               >
                 {genre}

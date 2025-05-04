@@ -2,9 +2,12 @@
   display: flex;
   gap: 2rem;
   padding: 2rem;
-  max-width: 1200px;
+  width: 90%;
+  /* max-width: 1200px; */
   margin: auto;
 }
+
+
 
 .profile-left {
   flex: 3;

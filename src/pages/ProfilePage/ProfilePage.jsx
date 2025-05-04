@@ -1,5 +1,3 @@
-
-
 // src/pages/ProfilePage/ProfilePage.jsx
 import React, { useState } from "react";
 import "./ProfilePage.css";
@@ -13,14 +11,17 @@ function ProfilePage({ musician, navigate }) {
   //const availability = musician.availability || "Friday, Saturday, Sunday";   //Tar bort tillgänglighet
   const socialLinks = musician.socialLinks || [
     { name: "Spotify", url: "#" },
-    { name: "Instagram", url: "#" }
+    { name: "Instagram", url: "#" },
   ];
 
   return (
     <div className="profile-page">
       {/* Vänsterkolumn */}
       <div className="profile-left">
-        <button className="back-button" onClick={() => navigate("FindMusiciansPage")}>
+        <button
+          className="back-button"
+          onClick={() => navigate("FindMusiciansPage")}
+        >
           ← Hitta fler spektakel
         </button>
 
@@ -29,8 +30,14 @@ function ProfilePage({ musician, navigate }) {
         </h1>
 
         <div className="rating-location" style={{ alignItems: "center" }}>
-          <span style={{ color: "#FFC107", fontWeight: 700, fontSize: "1.2rem" }}>★</span>
-          <span style={{ fontWeight: 600, marginLeft: 4 }}>{musician.rating}</span>
+          <span
+            style={{ color: "#FFC107", fontWeight: 700, fontSize: "1.2rem" }}
+          >
+            ★
+          </span>
+          <span style={{ fontWeight: 600, marginLeft: 4 }}>
+            {musician.rating}
+          </span>
           <span style={{ color: "#888", marginLeft: 6 }}>
             ({musician.reviews?.length || 0} reviews)
           </span>
@@ -40,11 +47,18 @@ function ProfilePage({ musician, navigate }) {
 
         <div className="genre-tags" style={{ margin: "1rem 0" }}>
           {musician.genres.map((genre, i) => (
-            <span key={i} className="genre-tag">{genre}</span>
+            <span key={i} className="genre-tag">
+              {genre}
+            </span>
           ))}
         </div>
 
-        <img src={musician.image} alt={musician.name} className="profile-image" style={{ borderRadius: 12 }} />
+        <img
+          src={musician.image}
+          alt={musician.name}
+          className="profile-image"
+          style={{ borderRadius: 12 }}
+        />
 
         {/* Flikar */}
         <div style={{ margin: "1.5rem 0" }}>
@@ -66,7 +80,10 @@ function ProfilePage({ musician, navigate }) {
         {/* Flikinnehåll */}
         {activeTab === "about" && (
           <div>
-            <h2 style={{ fontWeight: 600, fontSize: "1.3rem" }}> {musician.name}</h2>
+            <h2 style={{ fontWeight: 600, fontSize: "1.3rem" }}>
+              {" "}
+              {musician.name}
+            </h2>
             <p style={{ marginBottom: 16 }}>{musician.description}</p>
             {/* <div style={{ marginBottom: 12 }}>
               <strong>Tillgängliga</strong>
@@ -75,11 +92,15 @@ function ProfilePage({ musician, navigate }) {
             <div>
               <strong>Sociala Medier</strong>
               <div style={{ marginTop: 4 }}>
-                {socialLinks.map(link => (
+                {socialLinks.map((link) => (
                   <a
                     key={link.name}
                     href={link.url}
-                    style={{ marginRight: 16, color: "#2752e7", textDecoration: "underline" }}
+                    style={{
+                      marginRight: 16,
+                      color: "#2752e7",
+                      textDecoration: "underline",
+                    }}
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -97,7 +118,8 @@ function ProfilePage({ musician, navigate }) {
             {musician.reviews && musician.reviews.length > 0 ? (
               musician.reviews.map((review, idx) => (
                 <div key={idx} style={{ marginBottom: 12 }}>
-                  <strong>{review.user}</strong> <span style={{ color: "#FFC107" }}>★</span> {review.rating}
+                  <strong>{review.user}</strong>{" "}
+                  <span style={{ color: "#FFC107" }}>★</span> {review.rating}
                   <p style={{ margin: 0 }}>{review.comment}</p>
                 </div>
               ))
@@ -111,26 +133,46 @@ function ProfilePage({ musician, navigate }) {
       {/* Högerkolumn */}
       <div className="profile-right">
         <div className="booking-box">
-          <h2 style={{ fontWeight: 700, fontSize: "1.3rem", marginBottom: 4 }}>Bokning</h2>
+          <h2 style={{ fontWeight: 700, fontSize: "1.3rem", marginBottom: 4 }}>
+            Bokning
+          </h2>
           <div style={{ color: "#555", marginBottom: 10 }}>
             Boka {musician.name} för ditt nästa spektakel
           </div>
-          <div style={{ fontWeight: 700, fontSize: "2rem" }}>{musician.price} </div>
+          <div style={{ fontWeight: 700, fontSize: "2rem" }}>
+            {musician.price}{" "}
+          </div>
           {/* <div style={{ color: "#888", fontSize: "0.98rem", marginBottom: 8 }}>per performance</div> */}
-          {/* <div style={{ fontWeight: 600, marginTop: 12 }}>Tillgängliga</div> */}  {/*Tar bort Tillgänglighet*/}
-          {/* <div style={{ marginBottom: 10 }}>Tillgängliga: {availability}</div> */}   {/*Tar bort Tillgänglighet*/}
+          {/* <div style={{ fontWeight: 600, marginTop: 12 }}>Tillgängliga</div> */}{" "}
+          {/*Tar bort Tillgänglighet*/}
+          {/* <div style={{ marginBottom: 10 }}>Tillgängliga: {availability}</div> */}{" "}
+          {/*Tar bort Tillgänglighet*/}
           <div style={{ color: "#888", fontSize: "0.95rem", marginBottom: 10 }}>
             Kan enbart bokas av event-organisatörer.
           </div>
         </div>
 
         <div className="contact-box" style={{ marginTop: 24 }}>
-          <h2 style={{ fontWeight: 700, fontSize: "1.2rem", marginBottom: 4 }}>Kontakt</h2>
+          <h2 style={{ fontWeight: 700, fontSize: "1.2rem", marginBottom: 4 }}>
+            Kontakt
+          </h2>
           <div style={{ color: "#555", marginBottom: 8 }}>
             Skicka ett meddelande till {musician.name}
           </div>
-          <textarea placeholder="Skriv ditt meddelande här..." style={{ marginBottom: 10 }} />
-          <button className="send-button" style={{ width: "100%", display: "flex", alignItems: "center", justifyContent: "center", gap: 8 }}>
+          <textarea
+            placeholder="Skriv ditt meddelande här..."
+            style={{ marginBottom: 10 }}
+          />
+          <button
+            className="send-button"
+            style={{
+              width: "100%",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              gap: 8,
+            }}
+          >
             <span style={{ fontSize: 18 }}></span> Skicka Meddelande
           </button>
         </div>
