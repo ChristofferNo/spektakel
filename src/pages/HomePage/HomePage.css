@@ -63,7 +63,11 @@
 }
 
 .hero-button:hover {
-  background-color: #0055aa;
+  background-color: #0e3570;
+}
+
+.middle-paragraph {
+  padding-top: 4rem;
 }
 
 .musicians-textbox {
@@ -143,7 +147,7 @@
 }
 
 .step-number {
-  background-color: #003366;
+  background-color: #0e3570;
   color: white;
   width: 60px;
   height: 60px;
