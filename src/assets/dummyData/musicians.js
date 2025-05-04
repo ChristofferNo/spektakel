@@ -4,7 +4,7 @@ import BogdanBreakdanceVinter from "../Images/VinterBogdan.jpeg";
 import RubenOchTrubadurerna from "../Images/RubenTrub.jpeg";
 import Melker from "../Images/Melker.jpeg";
 import DJHammer from "../Images/DJ-Hammer-1.jpeg";
-import MaxSax from "../Images/Max-Sne.jpeg";
+import MaxSax from "../Images/Max-Rak.jpeg";
 
 const musicians = [
   {

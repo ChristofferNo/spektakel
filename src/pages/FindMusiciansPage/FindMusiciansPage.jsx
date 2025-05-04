@@ -49,17 +49,17 @@ function FindMusiciansPage({ navigate, setSelectedMusician }) {
       <aside className="sidebar">
         <h1>Find Musicians</h1>
 
-        <label className="label">Search</label>
+        <label className="label">Sök</label>
         <input
           className="search-input"
           type="text"
-          placeholder="Search by name..."
+          placeholder="Sök på namn..."
           value={search}
           onChange={(e) => setSearch(e.target.value)}
         />
 
         <div className="filter-section">
-          <h3>Filter by Genre</h3>
+          <h3>Filtrera efter Genre</h3>
           <div className="genre-tags">
             {allGenres.map((genre) => (
               <span
@@ -76,12 +76,12 @@ function FindMusiciansPage({ navigate, setSelectedMusician }) {
         </div>
 
         <div className="sort-section">
-          <h3>Sort By</h3>
+          <h3>Sortera Efter</h3>
           <select
             value={sortOrder}
             onChange={(e) => setSortOrder(e.target.value)}
           >
-            <option value="rating">Rating (High to Low)</option>
+            <option value="rating">Betyg (Högt till Lågt)</option>
             {/* Du kan lägga till fler sorteringsval här */}
           </select>
         </div>
