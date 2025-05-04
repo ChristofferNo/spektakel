@@ -1,77 +1,3 @@
-/* 
-
-.homePageContainer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100vw;
-}
-.bandImage {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: auto;
-}
-
-.hero-container {
-  position: relative;
-  height: 100vh;
-  width: 100%;
-  background-image: url("../../assets/Images/placeHolderImage.jpeg"); 
-  background-size: cover;
-  background-position: center;
-}
-
-.hero-overlay {
-  text-align: center;
-  color: white;
-  max-width: 100%;
-}
-
-.hero-button {
-  margin-top: 20px;
-  padding: 12px 24px;
-  background-color: #003366;
-  color: white;
-  border: none;
-  border-radius: 6px;
-  font-weight: bold;
-  cursor: pointer;
-  font-size: 16px;
-}
-
-.hero-button:hover {
-  background-color: #0055aa;
-}
-
-.dark-overlay {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 100vh;
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-}
-
-.artists-preview {
-  height: 200px;
-  display: flex;
-  flex-direction: row;
-  gap: 10vw;
-  padding: 2rem 10vw;
-}
-
-.artist-card {
-  flex: 1;
-}
-
-.musician-img {
-  object-fit: cover;
-} */
-
-
 .homePageContainer {
   display: flex;
   flex-direction: column;
@@ -138,4 +64,104 @@
 
 .hero-button:hover {
   background-color: #0055aa;
+}
+
+.musicians-textbox {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: space-around;
+  padding-top: 2rem;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.View-all-btn {
+  cursor: pointer;
+}
+
+.View-all-btn:hover {
+  color: #007bff;
+}
+
+.artists-preview {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  gap: 7vw;
+  padding: 2rem;
+}
+
+.artist-card {
+  flex: 1;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+.artist-img {
+  border-radius: 4px;
+  object-fit: cover;
+  width: 100%;
+  height: 200px;
+}
+
+.musicians-name {
+  padding: 1rem 1rem 0rem 1rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+/* How-it-works section */
+.how-it-works {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  margin-top: 2rem;
+  border-top: 1px solid #ddd;
+}
+
+.steps-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 30px;
+}
+
+.step-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 300px;
+  padding: 20px;
+}
+
+.step-number {
+  background-color: #003366;
+  color: white;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.step-title {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+.step-description {
+  color: #555;
+  line-height: 1.6;
 }
