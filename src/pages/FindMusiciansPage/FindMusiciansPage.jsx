@@ -5,7 +5,6 @@ import MusicianCard from "../../components/MusicianCard/MusicianCard";
 
 const allGenres = [
   "Acoustic",
-  "Alternative",
   "Blues",
   "Chamber",
   "Classical",
@@ -19,6 +18,8 @@ const allGenres = [
   "Rock",
   "Funk",
   "Coola",
+  "DJ",
+  "Epic",
 ];
 
 function FindMusiciansPage({ navigate, setSelectedMusician }) {

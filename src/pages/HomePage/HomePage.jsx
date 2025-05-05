@@ -64,7 +64,7 @@ function HomePage({ navigate }) {
         </div>
       </div>
       <div className="musicians-textbox">
-        <div>Musiker</div>
+        <div>Månadens Musiker</div>
         <a
           className="View-all-btn"
           onClick={() => {

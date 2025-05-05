@@ -127,6 +127,7 @@ textarea {
 
   .profile-page {
     flex-direction: column;
+    max-width: 85%;
   }
 
 }
