@@ -11,6 +11,14 @@ function App() {
   const [page, setPage] = useState("HomePage");
   const [selectedMusician, setSelectedMusician] = useState(null);
 
+  const changePage = (newPage) => {
+    setPage(newPage);
+    if (newPage !== "ProfilePage") {
+      setSelectedMusician(null); // Reset selected musician when changing pages
+    }
+    window.scrollTo(0, 0); // Scroll to top when changing pages
+  };
+
   const pageMap = {
     HomePage,
     AboutPage,
@@ -24,14 +32,14 @@ function App() {
     <>
       <div className="appContainer">
         {/* Render different components (Navigation logic) */}
-        <NavBar className="navBar" navigate={setPage} />
+        <NavBar className="navBar" navigate={changePage} />
         <ActivePage
-          navigate={setPage}
+          navigate={changePage}
           musician={selectedMusician}
           setSelectedMusician={setSelectedMusician}
         />
       </div>
-      <Footer navigate={setPage} />
+      <Footer navigate={changePage} />
     </>
   );
 }

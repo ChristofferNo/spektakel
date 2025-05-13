@@ -18,12 +18,20 @@ function ProfilePage({ musician, navigate }) {
     <div className="profile-page">
       {/* Vänsterkolumn */}
       <div className="profile-left">
-        <button
+        {/* <button
           className="back-button"
           onClick={() => navigate("FindMusiciansPage")}
         >
           ← Hitta fler spektakel
-        </button>
+        </button> */}
+        <a
+          className="View-all-btn"
+          onClick={() => {
+            navigate("FindMusiciansPage");
+          }}
+        >
+          ← Hitta fler spektakel
+        </a>
 
         <h1 style={{ fontWeight: 700, fontSize: "2.4rem", margin: "0.5rem 0" }}>
           {musician.name}
