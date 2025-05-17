@@ -27,8 +27,8 @@ const musicians = [
   },
   {
     name: "Bogdan Breakdance",
-    genres: ["Funk", "Jazz", "Coola", "Rock"],
-    rating: 5.6,
+    genres: ["Funk", "Jazz", "Rock"],
+    rating: 5.0,
     price: "＄＄",
     image: BogdanBreakdance,
     location: "Uppsala",
@@ -43,7 +43,7 @@ const musicians = [
       {
         user: "Emil",
         comment: "Hög energi och kul attityd – rekommenderas.",
-        rating: 4.6,
+        rating: 5,
       },
     ],
   },
@@ -75,7 +75,7 @@ const musicians = [
   },
 
   {
-    name: "Bogdans Pizzeria",
+    name: "Jazz Fackazz",
     genres: ["Comedy", "Entertainment", "House"],
     rating: 4.6,
     price: "＄",
@@ -112,8 +112,8 @@ const musicians = [
   },
 
   {
-    name: "Max with the Sax",
-    genres: ["Coola", "Saxofon", "Jazz", "Blues", "Funk"],
+    name: "Max Maly",
+    genres: ["Saxofon", "Jazz", "Blues", "Funk"],
     rating: 4.7,
     price: "＄",
     image: MaxSax,

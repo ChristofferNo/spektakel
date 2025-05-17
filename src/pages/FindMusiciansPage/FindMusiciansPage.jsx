@@ -17,7 +17,6 @@ const allGenres = [
   "Pop",
   "Rock",
   "Funk",
-  "Coola",
   "DJ",
   "Epic",
 ];
