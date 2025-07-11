@@ -119,12 +119,11 @@ const musicians = [
     image: MaxSax,
     location: "Uppsala",
     description:
-      "Saxofonist som gör hela publiken kåt. Med fingrar spelande likt en gud och lungor alstrande vindar som blåser publiken till extas!",
+      "Saxofonist som charmerar hela festen. Med fingrar spelande likt en gud och lungor alstrande vindar som blåser publiken till extas!",
     reviews: [
       {
         user: "Zoe",
-        comment:
-          "Helt magiskt! Vilken sexig man och ännu sexigare saxofon – jag är våt!",
+        comment: "Helt magiskt! Riktigt härlig blandning av funk och jazz!",
         rating: 4.7,
       },
     ],
