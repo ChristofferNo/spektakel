@@ -160,3 +160,41 @@
     }
   }
   
+
+
+
+  /* Desktop button styling for Logga In and Skapa Konto */
+.nav-login,
+.nav-register {
+  padding: 0.4rem 1rem;
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: 1rem;
+  border: 2px solid transparent;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Grey button: Logga In */
+.nav-login {
+  background-color: #f0f0f0;
+  color: #333;
+  border-color: #ccc;
+}
+
+.nav-login:hover {
+  background-color: #e0e0e0;
+  color: #000;
+}
+
+/* Blue button: Skapa Konto */
+.nav-register {
+  background-color: #003366;
+  color: #fff;
+  border-color: #003366;
+}
+
+.nav-register:hover {
+  background-color: #0056d2;
+  border-color: #0056d2;
+  color: #fff;
+}

@@ -24,7 +24,7 @@ function Footer({ navigate }) {
           <h4>För Musiker</h4>
           <ul>
             <li>
-              <button onClick={() => navigate("FindMusiciansPage")}>
+              <button onClick={() => navigate("RegisterPage")}>
                 Skapa Profil
               </button>
             </li>
@@ -44,14 +44,19 @@ function Footer({ navigate }) {
                 Hitta ditt nästa spektakel
               </button>
             </li>
+
             <li>
-              <a href="#">Skapa konto</a>
+              <button onClick={() => navigate("RegisterPage")}>
+                Skapa Konto
+              </button>
             </li>
+
             <li>
               <a href="#">Eventresurser</a>
             </li>
           </ul>
         </div>
+
         <div>
           <h4>Kontakt</h4>
           <ul>

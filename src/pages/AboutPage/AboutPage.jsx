@@ -31,7 +31,7 @@ function AboutPage({ navigate }) {
 
           <h2>Så Började Det</h2>
           <p>
-            Spektakel grundades 2023 av tre musikälskande studenter som själva
+            Spektakel grundades 2024 av tre musikälskande studenter som själva
             upplevt hur svårt det kan vara att hitta spelningar och samarbeten i
             Uppsala. Det började som en enkel idé – som vi vill ska växa till en
             självklar mötesplats för musik och studentkultur.
@@ -66,14 +66,14 @@ function AboutPage({ navigate }) {
           <div className="button-group">
             <button
               className="btn btn-primary"
-              onClick={() => navigate("LoginPage")}
+              onClick={() => navigate("RegisterPage")}
             >
               Registrera dig
             </button>
 
             <button
               className="btn btn-outline"
-              onClick={() => navigate("ContactPage")}
+              onClick={() => navigate("AboutPage")}
             >
               Kontakta oss
             </button>
