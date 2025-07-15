@@ -49,7 +49,7 @@ function HomePage({ navigate }) {
         ))}
         <div className="dark-overlay">
           <div className="hero-overlay">
-            <h1>Uppsalas främsta plattform för studentmusiker</h1>
+            <h1>Uppsalas plattform för studentmusiker</h1>
             <p className="middle-paragraph">
               Vi för samman musiker med nationer och event-organisatörer i
               Uppsala

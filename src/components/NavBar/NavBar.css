@@ -176,9 +176,9 @@
 
 /* Grey button: Logga In */
 .nav-login {
-  background-color: #f0f0f0;
-  color: #333;
-  border-color: #ccc;
+  background-color: #ffffff;
+  color: #003366;
+  border-color: #003366;
 }
 
 .nav-login:hover {
