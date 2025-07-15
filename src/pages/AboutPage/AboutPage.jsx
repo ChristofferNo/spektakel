@@ -1,7 +1,7 @@
 import "./AboutPage.css";
 import GruppBild from "../../assets/Images/Gruppbild_3.svg";
 
-function AboutPage() {
+function AboutPage({ navigate }) {
   return (
     <div className="about-container">
       <div className="about-content">
@@ -64,12 +64,19 @@ function AboutPage() {
           </p>
 
           <div className="button-group">
-            <a href="/register" className="btn btn-primary">
+            <button
+              className="btn btn-primary"
+              onClick={() => navigate("LoginPage")}
+            >
               Registrera dig
-            </a>
-            <a href="/contact" className="btn btn-outline">
+            </button>
+
+            <button
+              className="btn btn-outline"
+              onClick={() => navigate("ContactPage")}
+            >
               Kontakta oss
-            </a>
+            </button>
           </div>
         </div>
       </div>
@@ -78,21 +85,3 @@ function AboutPage() {
 }
 
 export default AboutPage;
-
-// import "./AboutPage.css";
-// function AboutPage() {
-//   return (
-//     <div className="text-about">
-//       <h1>Om oss</h1>
-//       <p>
-//         <h4>
-//           Vi är tre studenter i Uppsala som vill se mer livemusik i vår stad och
-//           vill göra det enklare för arrangörer och artister att hitta varandra.
-//           <p>Med Spektakel vill vi stärka Uppsalas musikkultur.</p>
-//         </h4>
-//       </p>
-//     </div>
-//   );
-// }
-
-// export default AboutPage;

@@ -1,50 +1,3 @@
-/* src/assets/styles/NavBar.css */
-/* .navBar {
-    background-color: #f0f0f0;
-    padding: 10px 20px;
-    display: flex;
-    flex-direction: row;
-    justify-content: stretch;
-    align-items: center;
-  }
-  
-  .navBar ul {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-  }
-  
-  .navBar li {
-    cursor: pointer;
-    transition: color 0.3s;
-  }
-  
-  .navBar li:hover {
-    color: #007bff;
-  }
-
-  .logoContainer {
-    display: flex;
-    flex: 2;
-    flex-direction: row;
-    align-items: center;
-    justify-content: start;
-  }
-  .logo{
-    font-size: 24px;
-    font-weight: bold;
-    cursor: pointer;
-    display: flex;
-  }
-  .logo:hover {
-    color: #007bff;
-  }
-  .navItems {
-    flex: 1;
-    flex-direction: row;
-    justify-items: center;
-  } */
-
 
   .navBar {
     display: flex;
@@ -83,20 +36,6 @@
   }
   
 
-  /* .logoContainer {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    height: 100%;
-    cursor: pointer;
-  }
-  
-  .logoImage {
-    height: 7rem;
-    width: auto;
-    object-fit: contain;
-    transition: transform 0.2s ease;
-  } */
   
   .logoImage:hover {
     transform: scale(1.05);
