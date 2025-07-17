@@ -1,17 +1,30 @@
-/* MessagePage.css */
 .message-page {
     display: flex;
+    flex-direction: row;
     height: calc(100vh - 80px);
-    max-width: 1200px;
-    margin: 40px auto;
-    gap: 20px;
+    max-width: 100%;
+    padding: 20px;
+    gap: 24px;
+    box-sizing: border-box;
   }
   
+  /* Wider conversation list */
   .conversation-list {
-    width: 30%;
-    border-right: 1px solid #ddd;
-    padding-right: 10px;
+    width: 40vw;
+    background-color: #f5f5f5;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding-right: 20px;
     overflow-y: auto;
+  }
+
+  .chat-window {
+    width: 65vw;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
   }
   
   .conversation-list input {
@@ -57,15 +70,6 @@
     margin-left: auto;
   }
   
-  .chat-window {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    overflow: hidden;
-  }
-  
   .chat-header {
     display: flex;
     align-items: center;
@@ -91,7 +95,7 @@
   }
   
   .msg {
-    max-width: 60%;
+    max-width: 70%;
     padding: 10px 15px;
     border-radius: 20px;
     position: relative;
@@ -99,7 +103,7 @@
   
   .msg.sent {
     align-self: flex-end;
-    background-color: #007bff;
+    background-color: #0e3570;
     color: white;
   }
   
@@ -126,14 +130,14 @@
     flex: 1;
     padding: 10px;
     border-radius: 20px;
-    border: 1px solid #ccc;
+    border: 1px solid #0e3570;
   }
   
   .chat-input button {
     margin-left: 10px;
     padding: 10px 16px;
     border: none;
-    background-color: #007bff;
+    background-color: #0e3570;
     color: white;
     border-radius: 20px;
     cursor: pointer;
@@ -143,5 +147,31 @@
     margin: auto;
     font-size: 1.2rem;
     color: #666;
+  }
+  
+  /* Mobile responsiveness */
+  @media (max-width: 768px) {
+    .message-page {
+      flex-direction: column;
+      padding: 10px;
+    }
+  
+    .conversation-list,
+    .chat-window {
+      width: 100%;
+      padding-right: 0;
+    }
+  
+    .chat-window {
+      margin-top: 20px;
+    }
+  
+    .chat-body {
+      padding: 15px;
+    }
+  
+    .msg {
+      max-width: 90%;
+    }
   }
   
