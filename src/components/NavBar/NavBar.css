@@ -177,8 +177,8 @@
 /* Grey button: Logga In */
 .nav-login {
   background-color: #ffffff;
-  color: #003366;
-  border-color: #003366;
+  color: #0e3570;
+  border-color: #0e3570;
 }
 
 .nav-login:hover {
@@ -188,13 +188,13 @@
 
 /* Blue button: Skapa Konto */
 .nav-register {
-  background-color: #003366;
+  background-color: #0e3570;
   color: #fff;
-  border-color: #003366;
+  border-color: #0e3570;
 }
 
 .nav-register:hover {
-  background-color: #0056d2;
-  border-color: #0056d2;
+  background-color: #8b97a7;
+  border-color: #0e3570;
   color: #fff;
 }

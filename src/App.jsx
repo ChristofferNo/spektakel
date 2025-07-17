@@ -6,6 +6,7 @@ import FindMusiciansPage from "./pages/FindMusiciansPage/FindMusiciansPage";
 import ProfilePage from "./pages/ProfilePage/ProfilePage";
 import LoginPage from "./pages/LoginPage/LoginPage";
 import RegisterPage from "./pages/RegisterPage/RegisterPage";
+import MessagePage from "./pages/MessagePage/MessagePage";
 import Footer from "./components/Footer/Footer";
 import "./assets/styles/App.css";
 
@@ -28,6 +29,7 @@ function App() {
     ProfilePage,
     LoginPage,
     RegisterPage,
+    MessagePage,
   };
 
   const ActivePage = pageMap[page];
